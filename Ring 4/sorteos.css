@@ -1,0 +1,228 @@
+/* ==========================================================================
+   ESTILOS BASE (PANEL DE INSCRIPCIONES Y LISTAS)
+   ========================================================================== */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', sans-serif; }
+body { background-color: #0b0b0b; color: #ffffff; min-height: 100vh; padding: 20px; }
+.top-nav { display: flex; align-items: center; background-color: #000; padding: 15px; border-bottom: 3px solid #cc0000; margin-bottom: 25px; gap: 15px; }
+.btn-regresar { background-color: #1a1a1a; color: #fff; border: 1px solid #444; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+#catTitulo { flex: 1; text-align: center; font-size: 24px; text-transform: uppercase; }
+
+/* Contenedor y Botones Nuevos para Respaldos */
+.backup-actions { display: flex; gap: 10px; }
+.btn-backup { background-color: #222; color: #fff; border: 1px solid #444; padding: 10px 15px; cursor: pointer; font-size: 13px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+.btn-exportar:hover { background-color: #28a745; border-color: #28a745; }
+.btn-importar:hover { background-color: #0044cc; border-color: #0044cc; }
+
+.workflow-card { background-color: #0d0d0d; border: 1px solid #222; border-radius: 8px; padding: 20px; margin-bottom: 25px; }
+.card-header { font-size: 18px; font-weight: bold; border-bottom: 2px solid #cc0000; padding-bottom: 6px; margin-bottom: 15px; text-transform: uppercase; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group label { font-size: 11px; color: #aaa; text-transform: uppercase; }
+.form-group input, .form-group select { background-color: #141414; border: 1px solid #333; padding: 10px; color: #fff; border-radius: 4px; }
+.form-actions { display: flex; gap: 10px; }
+.form-actions button { flex: 1; padding: 12px; font-weight: bold; cursor: pointer; border: none; color: #fff; text-transform: uppercase; border-radius: 4px; }
+.btn-submit { background-color: #800000; }
+.btn-next { background-color: #0044cc; }
+.btn-clear { background-color: #333; }
+.btn-extra { background-color: #222; color: #fff; border: 1px solid #444; padding: 10px 20px; cursor: pointer; font-weight: bold; text-transform: uppercase; border-radius: 4px; }
+.extra-bar { margin-bottom: 15px; text-align: right; }
+.list-container { margin-top: 20px; background: #111; padding: 12px; border-radius: 4px; }
+.badge-list li { background: #222; padding: 8px; margin-bottom: 5px; border-left: 3px solid #cc0000; font-size: 13px; list-style: none; }
+.sorteo-box { display: flex; align-items: center; justify-content: space-around; margin: 20px 0; }
+.sorteo-box select { background: #141414; color: #fff; padding: 12px; border: 1px solid #333; width: 40%; }
+.vs-text { font-size: 28px; color: #cc0000; font-weight: 900; }
+.fight-box { background-color: #111; border: 1px solid #333; margin-bottom: 15px; border-radius: 6px; overflow: hidden; }
+.fight-header { background-color: #1a1a1a; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.btn-iniciar { background-color: #0044cc; color: #fff; border: none; padding: 5px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: center; border-bottom: 1px solid #222; font-size: 13px; }
+th { background-color: #151515; color: #777; }
+td select { background: #222; color: #fff; border: 1px solid #444; padding: 4px; }
+
+/* ==========================================================================
+   EL MARCADOR MAESTRO: CONTROL ABSOLUTO SOBRE LA IMAGEN
+   ========================================================================== */
+.canvas-scoreboard-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1280px; 
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    background-image: url('contador.png'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border: 4px solid #1a1a1c;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.canvas-text {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.text-categoria {
+    top: 3.5%;        
+    left: 29.5%;
+    width: 41%;
+    font-size: 1.6vw; 
+    font-weight: 900;
+    line-height: 1.1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;   
+    overflow: hidden;
+    height: 8%;              
+}
+
+.text-subdatos {
+    top: 12.5%;       
+    left: 40%;
+    width: 20%;
+    font-size: 0.8vw;
+    color: #ff3333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.name-player-blue {
+    top: 25.5%;
+    left: 4%;
+    width: 27%;
+    font-size: 2vw;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score-player-blue {
+    top: 35%;
+    left: 5%;
+    width: 25%;
+    font-size: 11vw;
+    font-family: 'Impact', sans-serif;
+    color: #0066ff;
+    line-height: 1;
+}
+
+.name-player-red {
+    top: 25.5%;
+    left: 69%;
+    width: 27%;
+    font-size: 2vw;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score-player-red {
+    top: 35%;
+    left: 70%;
+    width: 25%;
+    font-size: 11vw;
+    font-family: 'Impact', sans-serif;
+    color: #ff1a1a;
+    line-height: 1;
+}
+
+.main-cronometro {
+    top: 25.5%;
+    left: 36.5%;
+    width: 27%;
+    font-size: 9.2vw;
+    font-family: 'Impact', sans-serif;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.coach-bubble-left {
+    display: none; position: absolute; top: 18%; left: 24%;
+    background: #ffcc00; color: #000; font-size: 1vw; font-weight: 900; padding: 2px 6px; border-radius: 4px;
+}
+.coach-bubble-right {
+    display: none; position: absolute; top: 18%; left: 89%;
+    background: #ffcc00; color: #000; font-size: 1vw; font-weight: 900; padding: 2px 6px; border-radius: 4px;
+}
+
+/* ==========================================================================
+   BOTONES TOTALMENTE INVISIBLES MAPEADOS POR COORDENADAS COINCIDENTES
+   ========================================================================== */
+.invisible-btn {
+    position: absolute;
+    background: rgba(255, 255, 255, 0); 
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Botones Internos del Cuadro Azul */
+.zone-blue-sumar   { top: 70.0%; left: 3.1%;  width: 6.4%; height: 11.2%; }
+.zone-blue-restar  { top: 70.0%; left: 10.0%; width: 6.4%; height: 11.2%; }
+.zone-blue-reset   { top: 70.0%; left: 16.9%; width: 6.4%; height: 11.2%; }
+.zone-blue-coach   { top: 70.0%; left: 23.8%; width: 6.4%; height: 11.2%; }
+
+/* Botones Internos del Cuadro Rojo */
+.zone-red-sumar    { top: 70.0%; left: 69.8%; width: 6.4%; height: 11.2%; }
+.zone-red-restar   { top: 70.0%; left: 76.7%; width: 6.4%; height: 11.2%; }
+.zone-red-reset    { top: 70.0%; left: 83.6%; width: 6.4%; height: 11.2%; }
+.zone-red-coach    { top: 70.0%; left: 90.5%; width: 6.4%; height: 11.2%; }
+
+/* Selectores de Tiempos Centrales */
+.zone-time-130     { top: 54.5%; left: 34.8%; width: 8.7%; height: 10.0%; }
+.zone-time-200     { top: 54.5%; left: 44.5%; width: 8.7%; height: 10.0%; }
+.zone-time-300     { top: 54.5%; left: 54.2%; width: 8.7%; height: 10.0%; }
+
+/* Mandos del Reloj Central */
+.zone-ctrl-play    { top: 68.0%; left: 34.8%; width: 8.7%; height: 14.5%; }
+.zone-ctrl-pause   { top: 68.0%; left: 44.5%; width: 8.7%; height: 14.5%; }
+.zone-ctrl-reset   { top: 68.0%; left: 54.2%; width: 8.7%; height: 14.5%; }
+
+/* Ajustadores de la Franja Inferior Extrema */
+.zone-adj-minus10  { top: 92.5%; left: 1.5%;  width: 3.4%; height: 6.0%; }
+.zone-adj-minus5   { top: 92.5%; left: 5.5%;  width: 3.4%; height: 6.0%; }
+
+.zone-action-finalizar { top: 90.5%; left: 29.5%; width: 22.0%; height: 8.0%; }
+.zone-action-regresar  { top: 91.5%; left: 56.5%; width: 17.0%; height: 6.8%; }
+
+.zone-adj-plus5    { top: 92.5%; left: 87.5%; width: 3.4%; height: 6.0%; }
+.zone-adj-plus10   { top: 92.5%; left: 91.5%; width: 3.4%; height: 6.0%; }
+
+/* Modales */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.modal-content { background: #111; border: 2px solid #444; padding: 25px; border-radius: 8px; width: 90%; max-width: 450px; text-align: center; }
+.modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; padding-bottom: 8px; }
+.btn-cerrar-modal { background: none; border: none; color: #fff; font-size: 24px; cursor: pointer; }
+.modal-body { margin: 15px 0; }
+.modal-cat-titulo { color: #ffcc00; margin-bottom: 10px; }
+.center { text-align: center; }
+.btn-print { background: #ffcc00; color: #000; padding: 12px 20px; border: none; font-weight: bold; cursor: pointer; border-radius: 4px; }
+
+/* --- ELIMINACIÓN TOTAL DE EFECTOS AL HACER CLICK --- */
+.invisible-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+.invisible-btn:focus, 
+.invisible-btn:active, 
+.invisible-btn:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    -webkit-tap-highlight-color: transparent !important;
+}

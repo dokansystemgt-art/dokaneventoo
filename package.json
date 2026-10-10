@@ -1,0 +1,12 @@
+{
+  "name": "dokan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning apps/api/src/server.ts",
+    "dev": "node --watch --env-file-if-exists=.env --disable-warning=ExperimentalWarning apps/api/src/server.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test \"apps/api/test/*.test.ts\""
+  }
+}

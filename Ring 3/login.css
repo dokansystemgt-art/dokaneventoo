@@ -1,0 +1,180 @@
+/* --- Estilos Generales y Reset --- */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* --- Estilos del Login --- */
+.container { 
+    display: flex; 
+    height: 100vh; 
+}
+
+.left-side { 
+    flex: 1.1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: white; 
+}
+
+.right-side { 
+    flex: 1; 
+    background: radial-gradient(circle at center, #2c2d31 0%, #111215 100%); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* AQUÍ SE AGRANDÓ EL LOGO */
+.right-side img { 
+    width: 100%; /* Aumentado del 75% al 85% para que se vea imponente */
+    max-width: 520px; /* Límite máximo aumentado */
+    height: auto;
+    filter: drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.6)); 
+}
+
+.login-box { 
+    width: 380px; 
+    padding: 20px;
+}
+
+.login-box h1 { 
+    color: #9d1c24; 
+    font-size: 52px; 
+    margin-bottom: 35px; 
+    font-weight: 600; 
+    letter-spacing: -1.5px;
+}
+
+.input-group { 
+    position: relative; 
+    margin-bottom: 22px; 
+}
+
+.input-group i.fa-user,
+.input-group i.fa-lock { 
+    position: absolute; 
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #2c3033; 
+    font-size: 16px;
+    z-index: 2;
+}
+
+.input-group i.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a5a5a5;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 2;
+    transition: color 0.2s;
+}
+
+.input-group i.toggle-password:hover {
+    color: #666;
+}
+
+.input-group input { 
+    width: 100%; 
+    padding: 16px 45px 16px 50px; 
+    border-radius: 30px; 
+    border: 1px solid #c9bfd6; 
+    background: #e9e9e9; 
+    outline: none; 
+    font-size: 15px;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #a5a5a5;
+    font-weight: 400;
+}
+
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:hover, 
+.input-group input:-webkit-autofill:focus {
+    border: 1px solid #c9bfd6;
+    -webkit-text-fill-color: #444 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #e9e9e9 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.options { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 13px; 
+    color: #a0a0a0; 
+    margin-bottom: 35px; 
+    font-style: italic; 
+    padding: 0 5px;
+}
+
+.options a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+    accent-color: #9d1c24;
+}
+
+button { 
+    width: 100%; 
+    padding: 16px; 
+    border-radius: 30px; 
+    border: none; 
+    background: #9d1c24; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
+    font-size: 16px; 
+    box-shadow: 0px 8px 20px rgba(157, 28, 36, 0.35); 
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #82151b;
+    transform: translateY(-1px);
+    box-shadow: 0px 10px 22px rgba(157, 28, 36, 0.45);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* --- Resto de tus estilos del Navbar/Hero --- */
+.navbar { background-color: #1a1a1a; padding: 15px 30px; height: 60px; display: flex; align-items: center; }
+.nav-container { display: flex; width: 100%; justify-content: space-between; align-items: center; }
+.menu-icon { color: white; font-size: 20px; cursor: pointer; }
+.nav-links { display: flex; gap: 20px; }
+.nav-item { color: #888; text-decoration: none; font-size: 14px; font-weight: bold; }
+.nav-item.active { color: #9d1c24; }
+.nav-item:hover { color: white; }
+.hero { display: flex; align-items: center; justify-content: center; height: calc(100vh - 60px); width: 100%; background-color: #fafdff; }
+.hero-content { display: flex; align-items: center; justify-content: space-between; width: 90%; max-width: 1300px; }
+.text-side { display: flex; flex-direction: column; }
+.welcome { font-size: 18px; color: #555; letter-spacing: 2px; }
+.title { font-size: 80px; font-weight: bold; color: #000; line-height: 1; margin: 10px 0; }
+.defender { font-size: 24px; color: #666; letter-spacing: 6px; }
+.logo-side { display: flex; justify-content: flex-end; }
+.logo-side img { width: 1000px !important; height: auto; }

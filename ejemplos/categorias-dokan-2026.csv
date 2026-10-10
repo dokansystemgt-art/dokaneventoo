@@ -1,0 +1,134 @@
+﻿codigo;nombre;modalidad;genero;edad_min;edad_max;nivel;cintas;ring;hora;minutos;orden
+CPL-001;Cuartetas / Puntos Libre · 3 a 5 años · Principiante · Masculino;Cuartetas;Masculino;3;5;Principiante;Blanca|Amarilla|Naranja;;;30;1
+CPL-002;Cuartetas / Puntos Libre · 3 a 5 años · Intermedio · Masculino;Cuartetas;Masculino;3;5;Intermedio;Morada|Azul;;;30;2
+CPL-003;Cuartetas / Puntos Libre · 3 a 5 años · Avanzado · Masculino;Cuartetas;Masculino;3;5;Avanzado;Verde|Café|Roja;;;30;3
+CPL-004;Cuartetas / Puntos Libre · 3 a 5 años · Cinta Negra · Masculino;Cuartetas;Masculino;3;5;Cinta Negra;Negra;;;30;4
+CPL-005;Cuartetas / Puntos Libre · 3 a 5 años · Principiante · Femenino;Cuartetas;Femenino;3;5;Principiante;Blanca|Amarilla|Naranja;;;30;5
+CPL-006;Cuartetas / Puntos Libre · 3 a 5 años · Intermedio · Femenino;Cuartetas;Femenino;3;5;Intermedio;Morada|Azul;;;30;6
+CPL-007;Cuartetas / Puntos Libre · 3 a 5 años · Avanzado · Femenino;Cuartetas;Femenino;3;5;Avanzado;Verde|Café|Roja;;;30;7
+CPL-008;Cuartetas / Puntos Libre · 3 a 5 años · Cinta Negra · Femenino;Cuartetas;Femenino;3;5;Cinta Negra;Negra;;;30;8
+CPL-009;Cuartetas / Puntos Libre · 6 a 7 años · Principiante · Masculino;Cuartetas;Masculino;6;7;Principiante;Blanca|Amarilla|Naranja;;;30;9
+CPL-010;Cuartetas / Puntos Libre · 6 a 7 años · Intermedio · Masculino;Cuartetas;Masculino;6;7;Intermedio;Morada|Azul;;;30;10
+CPL-011;Cuartetas / Puntos Libre · 6 a 7 años · Avanzado · Masculino;Cuartetas;Masculino;6;7;Avanzado;Verde|Café|Roja;;;30;11
+CPL-012;Cuartetas / Puntos Libre · 6 a 7 años · Cinta Negra · Masculino;Cuartetas;Masculino;6;7;Cinta Negra;Negra;;;30;12
+CPL-013;Cuartetas / Puntos Libre · 6 a 7 años · Principiante · Femenino;Cuartetas;Femenino;6;7;Principiante;Blanca|Amarilla|Naranja;;;30;13
+CPL-014;Cuartetas / Puntos Libre · 6 a 7 años · Intermedio · Femenino;Cuartetas;Femenino;6;7;Intermedio;Morada|Azul;;;30;14
+CPL-015;Cuartetas / Puntos Libre · 6 a 7 años · Avanzado · Femenino;Cuartetas;Femenino;6;7;Avanzado;Verde|Café|Roja;;;30;15
+CPL-016;Cuartetas / Puntos Libre · 6 a 7 años · Cinta Negra · Femenino;Cuartetas;Femenino;6;7;Cinta Negra;Negra;;;30;16
+CPL-017;Cuartetas / Puntos Libre · 8 a 9 años · Principiante · Masculino;Cuartetas;Masculino;8;9;Principiante;Blanca|Amarilla|Naranja;;;30;17
+CPL-018;Cuartetas / Puntos Libre · 8 a 9 años · Intermedio · Masculino;Cuartetas;Masculino;8;9;Intermedio;Morada|Azul;;;30;18
+CPL-019;Cuartetas / Puntos Libre · 8 a 9 años · Avanzado · Masculino;Cuartetas;Masculino;8;9;Avanzado;Verde|Café|Roja;;;30;19
+CPL-020;Cuartetas / Puntos Libre · 8 a 9 años · Cinta Negra · Masculino;Cuartetas;Masculino;8;9;Cinta Negra;Negra;;;30;20
+CPL-021;Cuartetas / Puntos Libre · 8 a 9 años · Principiante · Femenino;Cuartetas;Femenino;8;9;Principiante;Blanca|Amarilla|Naranja;;;30;21
+CPL-022;Cuartetas / Puntos Libre · 8 a 9 años · Intermedio · Femenino;Cuartetas;Femenino;8;9;Intermedio;Morada|Azul;;;30;22
+CPL-023;Cuartetas / Puntos Libre · 8 a 9 años · Avanzado · Femenino;Cuartetas;Femenino;8;9;Avanzado;Verde|Café|Roja;;;30;23
+CPL-024;Cuartetas / Puntos Libre · 8 a 9 años · Cinta Negra · Femenino;Cuartetas;Femenino;8;9;Cinta Negra;Negra;;;30;24
+CPL-025;Cuartetas / Puntos Libre · 10 a 11 años · Principiante · Masculino;Cuartetas;Masculino;10;11;Principiante;Blanca|Amarilla|Naranja;;;30;25
+CPL-026;Cuartetas / Puntos Libre · 10 a 11 años · Intermedio · Masculino;Cuartetas;Masculino;10;11;Intermedio;Morada|Azul;;;30;26
+CPL-027;Cuartetas / Puntos Libre · 10 a 11 años · Avanzado · Masculino;Cuartetas;Masculino;10;11;Avanzado;Verde|Café|Roja;;;30;27
+CPL-028;Cuartetas / Puntos Libre · 10 a 11 años · Cinta Negra · Masculino;Cuartetas;Masculino;10;11;Cinta Negra;Negra;;;30;28
+CPL-029;Cuartetas / Puntos Libre · 10 a 11 años · Principiante · Femenino;Cuartetas;Femenino;10;11;Principiante;Blanca|Amarilla|Naranja;;;30;29
+CPL-030;Cuartetas / Puntos Libre · 10 a 11 años · Intermedio · Femenino;Cuartetas;Femenino;10;11;Intermedio;Morada|Azul;;;30;30
+CPL-031;Cuartetas / Puntos Libre · 10 a 11 años · Avanzado · Femenino;Cuartetas;Femenino;10;11;Avanzado;Verde|Café|Roja;;;30;31
+CPL-032;Cuartetas / Puntos Libre · 10 a 11 años · Cinta Negra · Femenino;Cuartetas;Femenino;10;11;Cinta Negra;Negra;;;30;32
+CPL-033;Cuartetas / Puntos Libre · 12 a 13 años · Principiante · Masculino;Cuartetas;Masculino;12;13;Principiante;Blanca|Amarilla|Naranja;;;30;33
+CPL-034;Cuartetas / Puntos Libre · 12 a 13 años · Intermedio · Masculino;Cuartetas;Masculino;12;13;Intermedio;Morada|Azul;;;30;34
+CPL-035;Cuartetas / Puntos Libre · 12 a 13 años · Avanzado · Masculino;Cuartetas;Masculino;12;13;Avanzado;Verde|Café|Roja;;;30;35
+CPL-036;Cuartetas / Puntos Libre · 12 a 13 años · Cinta Negra · Masculino;Cuartetas;Masculino;12;13;Cinta Negra;Negra;;;30;36
+CPL-037;Cuartetas / Puntos Libre · 12 a 13 años · Principiante · Femenino;Cuartetas;Femenino;12;13;Principiante;Blanca|Amarilla|Naranja;;;30;37
+CPL-038;Cuartetas / Puntos Libre · 12 a 13 años · Intermedio · Femenino;Cuartetas;Femenino;12;13;Intermedio;Morada|Azul;;;30;38
+CPL-039;Cuartetas / Puntos Libre · 12 a 13 años · Avanzado · Femenino;Cuartetas;Femenino;12;13;Avanzado;Verde|Café|Roja;;;30;39
+CPL-040;Cuartetas / Puntos Libre · 12 a 13 años · Cinta Negra · Femenino;Cuartetas;Femenino;12;13;Cinta Negra;Negra;;;30;40
+CPL-041;Cuartetas / Puntos Libre · 14 a 15 años · Principiante · Masculino;Cuartetas;Masculino;14;15;Principiante;Blanca|Amarilla|Naranja;;;30;41
+CPL-042;Cuartetas / Puntos Libre · 14 a 15 años · Intermedio · Masculino;Cuartetas;Masculino;14;15;Intermedio;Morada|Azul;;;30;42
+CPL-043;Cuartetas / Puntos Libre · 14 a 15 años · Avanzado · Masculino;Cuartetas;Masculino;14;15;Avanzado;Verde|Café|Roja;;;30;43
+CPL-044;Cuartetas / Puntos Libre · 14 a 15 años · Cinta Negra · Masculino;Cuartetas;Masculino;14;15;Cinta Negra;Negra;;;30;44
+CPL-045;Cuartetas / Puntos Libre · 14 a 15 años · Principiante · Femenino;Cuartetas;Femenino;14;15;Principiante;Blanca|Amarilla|Naranja;;;30;45
+CPL-046;Cuartetas / Puntos Libre · 14 a 15 años · Intermedio · Femenino;Cuartetas;Femenino;14;15;Intermedio;Morada|Azul;;;30;46
+CPL-047;Cuartetas / Puntos Libre · 14 a 15 años · Avanzado · Femenino;Cuartetas;Femenino;14;15;Avanzado;Verde|Café|Roja;;;30;47
+CPL-048;Cuartetas / Puntos Libre · 14 a 15 años · Cinta Negra · Femenino;Cuartetas;Femenino;14;15;Cinta Negra;Negra;;;30;48
+CPL-049;Cuartetas / Puntos Libre · 16 a 17 años · Principiante · Masculino;Cuartetas;Masculino;16;17;Principiante;Blanca|Amarilla|Naranja;;;30;49
+CPL-050;Cuartetas / Puntos Libre · 16 a 17 años · Intermedio · Masculino;Cuartetas;Masculino;16;17;Intermedio;Morada|Azul;;;30;50
+CPL-051;Cuartetas / Puntos Libre · 16 a 17 años · Avanzado · Masculino;Cuartetas;Masculino;16;17;Avanzado;Verde|Café|Roja;;;30;51
+CPL-052;Cuartetas / Puntos Libre · 16 a 17 años · Cinta Negra · Masculino;Cuartetas;Masculino;16;17;Cinta Negra;Negra;;;30;52
+CPL-053;Cuartetas / Puntos Libre · 16 a 17 años · Principiante · Femenino;Cuartetas;Femenino;16;17;Principiante;Blanca|Amarilla|Naranja;;;30;53
+CPL-054;Cuartetas / Puntos Libre · 16 a 17 años · Intermedio · Femenino;Cuartetas;Femenino;16;17;Intermedio;Morada|Azul;;;30;54
+CPL-055;Cuartetas / Puntos Libre · 16 a 17 años · Avanzado · Femenino;Cuartetas;Femenino;16;17;Avanzado;Verde|Café|Roja;;;30;55
+CPL-056;Cuartetas / Puntos Libre · 16 a 17 años · Cinta Negra · Femenino;Cuartetas;Femenino;16;17;Cinta Negra;Negra;;;30;56
+CPL-057;Cuartetas / Puntos Libre · 18+ años · Principiante · Masculino;Cuartetas;Masculino;18;99;Principiante;Blanca|Amarilla|Naranja;;;30;57
+CPL-058;Cuartetas / Puntos Libre · 18+ años · Intermedio · Masculino;Cuartetas;Masculino;18;99;Intermedio;Morada|Azul;;;30;58
+CPL-059;Cuartetas / Puntos Libre · 18+ años · Avanzado · Masculino;Cuartetas;Masculino;18;99;Avanzado;Verde|Café|Roja;;;30;59
+CPL-060;Cuartetas / Puntos Libre · 18+ años · Cinta Negra · Masculino;Cuartetas;Masculino;18;99;Cinta Negra;Negra;;;30;60
+CPL-061;Cuartetas / Puntos Libre · 18+ años · Principiante · Femenino;Cuartetas;Femenino;18;99;Principiante;Blanca|Amarilla|Naranja;;;30;61
+CPL-062;Cuartetas / Puntos Libre · 18+ años · Intermedio · Femenino;Cuartetas;Femenino;18;99;Intermedio;Morada|Azul;;;30;62
+CPL-063;Cuartetas / Puntos Libre · 18+ años · Avanzado · Femenino;Cuartetas;Femenino;18;99;Avanzado;Verde|Café|Roja;;;30;63
+CPL-064;Cuartetas / Puntos Libre · 18+ años · Cinta Negra · Femenino;Cuartetas;Femenino;18;99;Cinta Negra;Negra;;;30;64
+KA-001;Kata con Arma · 3 a 5 años · Principiante · Mixto;Kata con Arma;Mixto;3;5;Principiante;Blanca|Amarilla|Naranja;;;30;65
+KA-002;Kata con Arma · 3 a 5 años · Intermedio · Mixto;Kata con Arma;Mixto;3;5;Intermedio;Morada|Azul;;;30;66
+KA-003;Kata con Arma · 3 a 5 años · Avanzado · Mixto;Kata con Arma;Mixto;3;5;Avanzado;Verde|Café|Roja;;;30;67
+KA-004;Kata con Arma · 3 a 5 años · Cinta Negra · Mixto;Kata con Arma;Mixto;3;5;Cinta Negra;Negra;;;30;68
+KA-005;Kata con Arma · 6 a 7 años · Principiante · Mixto;Kata con Arma;Mixto;6;7;Principiante;Blanca|Amarilla|Naranja;;;30;69
+KA-006;Kata con Arma · 6 a 7 años · Intermedio · Mixto;Kata con Arma;Mixto;6;7;Intermedio;Morada|Azul;;;30;70
+KA-007;Kata con Arma · 6 a 7 años · Avanzado · Mixto;Kata con Arma;Mixto;6;7;Avanzado;Verde|Café|Roja;;;30;71
+KA-008;Kata con Arma · 6 a 7 años · Cinta Negra · Mixto;Kata con Arma;Mixto;6;7;Cinta Negra;Negra;;;30;72
+KA-009;Kata con Arma · 8 a 9 años · Principiante · Mixto;Kata con Arma;Mixto;8;9;Principiante;Blanca|Amarilla|Naranja;;;30;73
+KA-010;Kata con Arma · 8 a 9 años · Intermedio · Mixto;Kata con Arma;Mixto;8;9;Intermedio;Morada|Azul;;;30;74
+KA-011;Kata con Arma · 8 a 9 años · Avanzado · Mixto;Kata con Arma;Mixto;8;9;Avanzado;Verde|Café|Roja;;;30;75
+KA-012;Kata con Arma · 8 a 9 años · Cinta Negra · Mixto;Kata con Arma;Mixto;8;9;Cinta Negra;Negra;;;30;76
+KA-013;Kata con Arma · 10 a 11 años · Principiante · Mixto;Kata con Arma;Mixto;10;11;Principiante;Blanca|Amarilla|Naranja;;;30;77
+KA-014;Kata con Arma · 10 a 11 años · Intermedio · Mixto;Kata con Arma;Mixto;10;11;Intermedio;Morada|Azul;;;30;78
+KA-015;Kata con Arma · 10 a 11 años · Avanzado · Mixto;Kata con Arma;Mixto;10;11;Avanzado;Verde|Café|Roja;;;30;79
+KA-016;Kata con Arma · 10 a 11 años · Cinta Negra · Mixto;Kata con Arma;Mixto;10;11;Cinta Negra;Negra;;;30;80
+KA-017;Kata con Arma · 12 a 13 años · Principiante · Mixto;Kata con Arma;Mixto;12;13;Principiante;Blanca|Amarilla|Naranja;;;30;81
+KA-018;Kata con Arma · 12 a 13 años · Intermedio · Mixto;Kata con Arma;Mixto;12;13;Intermedio;Morada|Azul;;;30;82
+KA-019;Kata con Arma · 12 a 13 años · Avanzado · Mixto;Kata con Arma;Mixto;12;13;Avanzado;Verde|Café|Roja;;;30;83
+KA-020;Kata con Arma · 12 a 13 años · Cinta Negra · Mixto;Kata con Arma;Mixto;12;13;Cinta Negra;Negra;;;30;84
+KA-021;Kata con Arma · 14 a 15 años · Principiante · Mixto;Kata con Arma;Mixto;14;15;Principiante;Blanca|Amarilla|Naranja;;;30;85
+KA-022;Kata con Arma · 14 a 15 años · Intermedio · Mixto;Kata con Arma;Mixto;14;15;Intermedio;Morada|Azul;;;30;86
+KA-023;Kata con Arma · 14 a 15 años · Avanzado · Mixto;Kata con Arma;Mixto;14;15;Avanzado;Verde|Café|Roja;;;30;87
+KA-024;Kata con Arma · 14 a 15 años · Cinta Negra · Mixto;Kata con Arma;Mixto;14;15;Cinta Negra;Negra;;;30;88
+KA-025;Kata con Arma · 16 a 17 años · Principiante · Mixto;Kata con Arma;Mixto;16;17;Principiante;Blanca|Amarilla|Naranja;;;30;89
+KA-026;Kata con Arma · 16 a 17 años · Intermedio · Mixto;Kata con Arma;Mixto;16;17;Intermedio;Morada|Azul;;;30;90
+KA-027;Kata con Arma · 16 a 17 años · Avanzado · Mixto;Kata con Arma;Mixto;16;17;Avanzado;Verde|Café|Roja;;;30;91
+KA-028;Kata con Arma · 16 a 17 años · Cinta Negra · Mixto;Kata con Arma;Mixto;16;17;Cinta Negra;Negra;;;30;92
+KA-029;Kata con Arma · 18+ años · Principiante · Mixto;Kata con Arma;Mixto;18;99;Principiante;Blanca|Amarilla|Naranja;;;30;93
+KA-030;Kata con Arma · 18+ años · Intermedio · Mixto;Kata con Arma;Mixto;18;99;Intermedio;Morada|Azul;;;30;94
+KA-031;Kata con Arma · 18+ años · Avanzado · Mixto;Kata con Arma;Mixto;18;99;Avanzado;Verde|Café|Roja;;;30;95
+KA-032;Kata con Arma · 18+ años · Cinta Negra · Mixto;Kata con Arma;Mixto;18;99;Cinta Negra;Negra;;;30;96
+KT-001;Kata Tradicional · 3 a 5 años · Principiante · Mixto;Kata Tradicional;Mixto;3;5;Principiante;Blanca|Amarilla|Naranja;;;30;97
+KT-002;Kata Tradicional · 3 a 5 años · Intermedio · Mixto;Kata Tradicional;Mixto;3;5;Intermedio;Morada|Azul;;;30;98
+KT-003;Kata Tradicional · 3 a 5 años · Avanzado · Mixto;Kata Tradicional;Mixto;3;5;Avanzado;Verde|Café|Roja;;;30;99
+KT-004;Kata Tradicional · 3 a 5 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;3;5;Cinta Negra;Negra;;;30;100
+KT-005;Kata Tradicional · 6 a 7 años · Principiante · Mixto;Kata Tradicional;Mixto;6;7;Principiante;Blanca|Amarilla|Naranja;;;30;101
+KT-006;Kata Tradicional · 6 a 7 años · Intermedio · Mixto;Kata Tradicional;Mixto;6;7;Intermedio;Morada|Azul;;;30;102
+KT-007;Kata Tradicional · 6 a 7 años · Avanzado · Mixto;Kata Tradicional;Mixto;6;7;Avanzado;Verde|Café|Roja;;;30;103
+KT-008;Kata Tradicional · 6 a 7 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;6;7;Cinta Negra;Negra;;;30;104
+KT-009;Kata Tradicional · 8 a 9 años · Principiante · Mixto;Kata Tradicional;Mixto;8;9;Principiante;Blanca|Amarilla|Naranja;;;30;105
+KT-010;Kata Tradicional · 8 a 9 años · Intermedio · Mixto;Kata Tradicional;Mixto;8;9;Intermedio;Morada|Azul;;;30;106
+KT-011;Kata Tradicional · 8 a 9 años · Avanzado · Mixto;Kata Tradicional;Mixto;8;9;Avanzado;Verde|Café|Roja;;;30;107
+KT-012;Kata Tradicional · 8 a 9 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;8;9;Cinta Negra;Negra;;;30;108
+KT-013;Kata Tradicional · 10 a 11 años · Principiante · Mixto;Kata Tradicional;Mixto;10;11;Principiante;Blanca|Amarilla|Naranja;;;30;109
+KT-014;Kata Tradicional · 10 a 11 años · Intermedio · Mixto;Kata Tradicional;Mixto;10;11;Intermedio;Morada|Azul;;;30;110
+KT-015;Kata Tradicional · 10 a 11 años · Avanzado · Mixto;Kata Tradicional;Mixto;10;11;Avanzado;Verde|Café|Roja;;;30;111
+KT-016;Kata Tradicional · 10 a 11 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;10;11;Cinta Negra;Negra;;;30;112
+KT-017;Kata Tradicional · 12 a 13 años · Principiante · Mixto;Kata Tradicional;Mixto;12;13;Principiante;Blanca|Amarilla|Naranja;;;30;113
+KT-018;Kata Tradicional · 12 a 13 años · Intermedio · Mixto;Kata Tradicional;Mixto;12;13;Intermedio;Morada|Azul;;;30;114
+KT-019;Kata Tradicional · 12 a 13 años · Avanzado · Mixto;Kata Tradicional;Mixto;12;13;Avanzado;Verde|Café|Roja;;;30;115
+KT-020;Kata Tradicional · 12 a 13 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;12;13;Cinta Negra;Negra;;;30;116
+KT-021;Kata Tradicional · 14 a 15 años · Principiante · Mixto;Kata Tradicional;Mixto;14;15;Principiante;Blanca|Amarilla|Naranja;;;30;117
+KT-022;Kata Tradicional · 14 a 15 años · Intermedio · Mixto;Kata Tradicional;Mixto;14;15;Intermedio;Morada|Azul;;;30;118
+KT-023;Kata Tradicional · 14 a 15 años · Avanzado · Mixto;Kata Tradicional;Mixto;14;15;Avanzado;Verde|Café|Roja;;;30;119
+KT-024;Kata Tradicional · 14 a 15 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;14;15;Cinta Negra;Negra;;;30;120
+KT-025;Kata Tradicional · 16 a 17 años · Principiante · Mixto;Kata Tradicional;Mixto;16;17;Principiante;Blanca|Amarilla|Naranja;;;30;121
+KT-026;Kata Tradicional · 16 a 17 años · Intermedio · Mixto;Kata Tradicional;Mixto;16;17;Intermedio;Morada|Azul;;;30;122
+KT-027;Kata Tradicional · 16 a 17 años · Avanzado · Mixto;Kata Tradicional;Mixto;16;17;Avanzado;Verde|Café|Roja;;;30;123
+KT-028;Kata Tradicional · 16 a 17 años · Cinta Negra · Mixto;Kata Tradicional;Mixto;16;17;Cinta Negra;Negra;;;30;124
+KT-029;Kata Tradicional · 18+ años · Principiante · Mixto;Kata Tradicional;Mixto;18;99;Principiante;Blanca|Amarilla|Naranja;;;30;125
+KT-030;Kata Tradicional · 18+ años · Intermedio · Mixto;Kata Tradicional;Mixto;18;99;Intermedio;Morada|Azul;;;30;126
+KT-031;Kata Tradicional · 18+ años · Avanzado · Mixto;Kata Tradicional;Mixto;18;99;Avanzado;Verde|Café|Roja;;;30;127
+KT-032;Kata Tradicional · 18+ años · Cinta Negra · Mixto;Kata Tradicional;Mixto;18;99;Cinta Negra;Negra;;;30;128
+OPW-1;Gran Campeón · 18+ años · Cinta Negra · Masculino;Especiales;Masculino;18;99;Cinta Negra;Negra;;;30;129
+OPW-2;Gran Campeón · 18+ años · Cinta Negra · Femenino;Especiales;Femenino;18;99;Cinta Negra;Negra;;;30;130
+SN-01;Seniors · 25+ años · Cinta Negra · Masculino;Especiales;Masculino;25;99;Cinta Negra;Negra;;;30;131
+SN-02;Seniors · 25+ años · Cinta Negra · Femenino;Especiales;Femenino;25;99;Cinta Negra;Negra;;;30;132
+KEX-007;Kata Exhibición General · Toda edad · Toda cinta · Mixto;Especiales;Mixto;3;99;Toda cinta;;;;30;133

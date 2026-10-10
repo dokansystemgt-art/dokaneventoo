@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorías - DOKAN</title>
+    <link rel="stylesheet" href="categoria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">INICIO</a>
+                <a href="#" class="nav-item active">CATEGORIAS</a>
+                <a href="sorteos.html" class="nav-item">SORTEO</a>
+            </nav>
+            <div class="logo-text">DOKAN</div>
+        </div>
+    </header>
+    <main class="container">
+        <h1>CATEGORIAS:</h1>
+        <div class="search-section">
+            <label>CATEGORIAS RING:</label>
+            <div class="search-input"><i class="fas fa-search"></i> 1 <i class="fas fa-caret-down"></i></div>
+        </div>
+        <div class="table-card">
+            <div class="table-header">CATEGORIAS DISPONIBLES</div>
+            <table>
+                <thead>
+                    <tr><th>CODIGO</th><th>NOMBRE DE LA CATEGORIA</th><th>RING</th><th>HORARIO</th><th>ORDEN</th></tr>
+                </thead>
+                <tbody id="lista"></tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin: 35px 0 15px 0;">
+            <button onclick="reiniciarTodoElSistema()" style="
+                background-color: #dc3545; 
+                color: white; 
+                border: none; 
+                padding: 15px 32px; 
+                font-size: 14px; 
+                font-weight: bold; 
+                border-radius: 8px; 
+                cursor: pointer; 
+                box-shadow: 0 4px 10px rgba(220, 53, 69, 0.25);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-family: sans-serif;
+                transition: background 0.2s;">
+                <i class="fas fa-trash-alt" style="margin-right: 8px;"></i> Eliminar Competidores de Todas las Categorías
+            </button>
+        </div>
+    </main>
+    <script src="categorias.js"></script>
+</body>
+</html>

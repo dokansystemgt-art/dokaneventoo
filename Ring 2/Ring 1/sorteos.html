@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Peleas - DOKAN SISTEM</title>
+    <link rel="stylesheet" href="sorteos.css">
+</head>
+<body>
+
+    <div id="vistaSorteo">
+        <div class="top-nav">
+            <button onclick="window.location.href='categorias.html'" class="btn-regresar">← REGRESAR</button>
+            <h1 id="catTitulo">CATEGORÍA</h1>
+            
+            <div class="backup-actions">
+                <button onclick="exportarTorneoCompleto()" class="btn-backup btn-exportar" title="Guardar todas las categorías de este navegador">📥 Exportar Todo el Torneo</button>
+                <input type="file" id="archivoImportar" accept=".json" onchange="importarTorneoCompleto(event)" style="display:none;">
+                <button onclick="document.getElementById('archivoImportar').click()" class="btn-backup btn-importar" title="Cargar todas las categorías desde otro navegador">📤 Importar Todo el Torneo</button>
+            </div>
+        </div>
+
+        <div id="faseInscripcion" class="workflow-card">
+            <div class="card-header">INSCRIBIR COMPETIDOR (COMBATE)</div>
+            <form id="formRegistro" onsubmit="registrarCompetidor(event)">
+                <div class="form-grid">
+                    <div class="form-group"><label>Nombre Completo:</label><input type="text" id="regNombre" required></div>
+                    <div class="form-group"><label>Cinta (Grado):</label><input type="text" id="regCinta" required></div>
+                    <div class="form-group"><label>Academia / Dojo:</label><input type="text" id="regAcademia" required></div>
+                    <div class="form-group"><label>Edad:</label><input type="number" id="regEdad" required></div>
+                    <div class="form-group"><label>Peso (kg):</label><input type="number" step="0.1" id="regPeso" required></div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Registrar Atleta</button>
+                    <button type="button" class="btn-next" onclick="finalizarInscripcion()">Ir a Sorteo</button>
+                    <button type="button" class="btn-clear" onclick="borrarTodosLosCompetidores()">Vaciar Lista</button>
+                </div>
+            </form>
+            <div class="list-container">
+                <h3>Atletas Inscritos (<span id="totalInscritos">0</span>)</h3>
+                <ul id="listaInscritos" class="badge-list"></ul>
+            </div>
+        </div>
+
+        <div id="faseSorteoManual" class="workflow-card" style="display:none;">
+            <div class="card-header">SORTEO MANUAL</div>
+            <div class="sorteo-box">
+                <select id="selectRojo"></select>
+                <div class="vs-text">VS</div>
+                <select id="selectAzul"></select>
+            </div>
+            <div class="form-actions">
+                <button class="btn-submit" onclick="armarPareja()">Emparejar Atletas</button>
+                <button id="btnFinalizarSorteo" class="btn-next" style="display:none;" onclick="activarFasePeleas()">Ver Tabla de Control</button>
+            </div>
+        </div>
+
+        <div id="fasePeleas" style="display:none;">
+            <div class="extra-bar">
+                <button class="btn-extra" onclick="abrirInscripcionExtra()">+ Inscripción de Emergencia</button>
+            </div>
+            <div id="contenedorPeleas"></div>
+            <div class="center" id="areaPodio" style="display:none; margin-top:30px;">
+                <button class="btn-print" onclick="abrirModalGanadores()">🏆 VER REPORTE DE GANADORES</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="vistaMarcador" style="display:none;">
+        <div class="canvas-scoreboard-wrapper">
+            
+            <div id="kumiteCatTitulo" class="canvas-text text-categoria">DUPLETA PRINCIPIANTE</div>
+            
+            <div class="canvas-text name-player-blue" id="n1">JUAN PÉREZ</div>
+            <div class="canvas-text score-player-blue" id="p1">00</div>
+            <span id="coachTime1" class="coach-bubble-left">+10s</span>
+            
+            <button type="button" class="invisible-btn zone-blue-sumar" onclick="updatePuntos('p1', 1)"></button>
+            <button type="button" class="invisible-btn zone-blue-restar" onclick="updatePuntos('p1', -1)"></button>
+            <button type="button" class="invisible-btn zone-blue-reset" onclick="resetPuntosIndividual('p1')"></button>
+            <button type="button" class="invisible-btn zone-blue-coach" onclick="activarCoach(1)"></button>
+
+            <div class="canvas-text main-cronometro" id="timer">02:00</div>
+            
+            <button type="button" class="invisible-btn zone-time-130" onclick="setTiempoManual(90)"></button>
+            <button type="button" class="invisible-btn zone-time-200" onclick="setTiempoManual(120)"></button>
+            <button type="button" class="invisible-btn zone-time-300" onclick="setTiempoManual(180)"></button>
+            
+            <button type="button" class="invisible-btn zone-ctrl-play" id="btnPlay" onclick="toggleTimer()"></button>
+            <button type="button" class="invisible-btn zone-ctrl-pause" onclick="pausarTimer()"></button>
+            <button type="button" class="invisible-btn zone-ctrl-reset" onclick="resetTimer()"></button>
+
+            <div class="canvas-text name-player-red" id="n2">JUAN PÉREZ</div>
+            <div class="canvas-text score-player-red" id="p2">00</div>
+            <span id="coachTime2" class="coach-bubble-right">+10s</span>
+            
+            <button type="button" class="invisible-btn zone-red-sumar" onclick="updatePuntos('p2', 1)"></button>
+            <button type="button" class="invisible-btn zone-red-restar" onclick="updatePuntos('p2', -1)"></button>
+            <button type="button" class="invisible-btn zone-red-reset" onclick="resetPuntosIndividual('p2')"></button>
+            <button type="button" class="invisible-btn zone-red-coach" onclick="activarCoach(2)"></button>
+
+            <button type="button" class="invisible-btn zone-adj-minus10" onclick="alterarSegundos(-10)"></button>
+            <button type="button" class="invisible-btn zone-adj-minus5" onclick="alterarSegundos(-5)"></button>
+            
+            <button type="button" class="invisible-btn zone-action-finalizar" onclick="terminarPelea()"></button>
+            <button type="button" class="invisible-btn zone-action-regresar" onclick="forzarSalidaMarcador()"></button>
+            
+            <button type="button" class="invisible-btn zone-adj-plus5" onclick="alterarSegundos(5)"></button>
+            <button type="button" class="invisible-btn zone-adj-plus10" onclick="alterarSegundos(10)"></button>
+        </div>
+    </div>
+
+    <div id="modalGanadores" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>RESULTADOS OFICIALES</h2>
+                <button class="btn-cerrar-modal" onclick="cerrarModalGanadores()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 id="modalCatTitulo" class="modal-cat-titulo">CATEGORÍA</h3>
+                <div style="margin-top: 15px;">
+                    <h4 style="color:#28a745;">🥇 PRIMER LUGAR</h4>
+                    <ul id="listaOro" style="list-style:none; padding:0; margin-bottom:15px;"></ul>
+                    <h4 style="color:#6c757d;">🥈 SEGUNDO LUGAR</h4>
+                    <ul id="listaPlata" style="list-style:none; padding:0;"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-regresar" onclick="cerrarModalGanadores()">CERRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="sorteos.js"></script>
+</body>
+</html>

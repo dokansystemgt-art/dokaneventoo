@@ -1,0 +1,458 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+}
+
+body { 
+    background: #000000; 
+    color: #ffffff; 
+}
+
+/* Navbar principal */
+.dokan-header { 
+    background: #080808; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px 30px; 
+    border-bottom: 1px solid #151515;
+}
+.menu-toggle { font-size: 20px; cursor: pointer; }
+.nav-links { display: flex; gap: 30px; }
+.nav-links a { color: #888; text-decoration: none; font-weight: bold; font-size: 13px; transition: color 0.2s; }
+.nav-links a:hover { color: #ffffff; }
+.nav-links a.active { color: #dc3545; border-bottom: 2px solid #dc3545; }
+.dokan-logo { font-weight: 900; font-size: 18px; }
+
+/* Barra superior de título */
+.top-nav { 
+    display: flex; 
+    align-items: center; 
+    padding: 18px 25px; 
+    gap: 25px; 
+    background: #000000; 
+    border-bottom: 3px solid #ff0000;
+}
+
+.btn-regresar { 
+    padding: 8px 18px; 
+    background: #000000; 
+    color: white; 
+    border: 1px solid #333333; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 13px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+.btn-regresar:hover {
+    background: #111111;
+}
+
+#catTitulo { 
+    font-size: 22px; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    flex: 1; /* Permite empujar los botones de copia de seguridad a la derecha */
+}
+
+/* ESTILOS DE RESPALDO GLOBAL NUEVOS */
+.backup-actions { display: flex; gap: 10px; }
+.btn-backup { background-color: #0b0b0b; color: #fff; border: 1px solid #1f1f1f; padding: 8px 15px; cursor: pointer; font-size: 12px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
+.btn-exportar:hover { background-color: #2ca85a; border-color: #2ca85a; }
+.btn-importar:hover { background-color: #0044cc; border-color: #0044cc; }
+
+/* Tarjeta contenedora de flujo */
+.workflow-card { 
+    background: #080808; 
+    max-width: 1200px; 
+    margin: 30px auto; 
+    padding: 25px; 
+    border-radius: 6px; 
+    border: 1px solid #111111;
+}
+
+.card-header { 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    border-bottom: 1px solid #ff0000; 
+    padding-bottom: 10px; 
+    margin-bottom: 25px; 
+    text-transform: uppercase;
+}
+
+/* Estilo de las cajas inputs oscuras */
+.form-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px; 
+}
+
+.form-group { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; 
+}
+
+.form-group label { 
+    font-size: 11px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    text-transform: uppercase;
+}
+
+.form-group input { 
+    padding: 12px; 
+    background-color: #0b0b0b;
+    border: 1px solid #1f1f1f; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    color: #ffffff;
+    outline: none;
+}
+.form-group input:focus {
+    border-color: #444444;
+}
+
+/* Fila de Botones del formulario */
+.form-actions { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-top: 30px; 
+}
+
+.form-actions button {
+    padding: 14px 22px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none;
+    transition: opacity 0.2s;
+}
+.form-actions button:hover {
+    opacity: 0.9;
+}
+
+.btn-submit { background: #800000; color: white; } 
+.btn-next { background: #0044cc; color: white; }   
+.btn-clear { background: #333333; color: white; }  
+
+/* Contenedores de Listas inferiores */
+.list-container { 
+    margin-top: 30px; 
+    border-top: 1px dashed #222222; 
+    padding-top: 20px; 
+}
+.list-container h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.badge-list { 
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+.badge-list li { 
+    background: #0b0b0b; 
+    color: #aaaaaa;
+    padding: 6px 14px; 
+    border-radius: 4px; 
+    font-size: 12px; 
+    border: 1px solid #1f1f1f;
+}
+
+/* Secciones de Tabla y Rondas de Competencia */
+.extra-bar {
+    max-width: 1000px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-extra {
+    padding: 10px 20px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fight-box { 
+    background: #080808; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    border-radius: 6px; 
+    overflow: hidden; 
+    border: 1px solid #151515; 
+}
+
+.fight-header { 
+    background: #800000; 
+    color: white; 
+    padding: 14px 20px; 
+    font-weight: bold; 
+    font-size: 14px; 
+    text-transform: uppercase;
+}
+
+table { width: 100%; border-collapse: collapse; }
+th { 
+    padding: 12px 15px; 
+    background: #0d0d0d; 
+    text-align: center; 
+    color: #777777; 
+    font-weight: 700; 
+    font-size: 12px; 
+    border-bottom: 1px solid #1f1f1f; 
+    text-transform: uppercase;
+}
+td { 
+    padding: 14px 15px; 
+    border-bottom: 1px solid #0d0d0d; 
+    font-size: 13px; 
+    text-align: center; 
+    color: #ffffff;
+}
+tr:hover td {
+    background: #111111;
+}
+
+td select { 
+    padding: 6px 12px; 
+    background: #0b0b0b;
+    color: #fff;
+    border: 1px solid #222;
+    border-radius: 4px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    outline: none;
+}
+
+.btn-play-atleta { 
+    background: #0044cc; 
+    color: white; 
+    border: none; 
+    padding: 8px 18px; 
+    font-weight: bold; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 11px; 
+    text-transform: uppercase;
+}
+.btn-play-atleta:disabled {
+    background: #151515;
+    color: #444444;
+    cursor: not-allowed;
+}
+
+.puntaje-label { 
+    background: #0b0b0b; 
+    color: #ff9900; 
+    font-weight: bold; 
+    padding: 6px 14px; 
+    border-radius: 4px; 
+    border: 1px solid #1f1f1f;
+}
+
+.center { text-align: center; }
+.btn-podio { 
+    background: #ff9900; 
+    color: #000;
+    padding: 14px 30px; 
+    border: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Marcador de Kata Pantalla Completa */
+#vistaMarcadorKata { 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #000000; 
+    padding: 40px 20px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.kata-top-black-bar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.kata-left-title { 
+    font-size: 42px; 
+    font-weight: 900; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+}
+#timerKata { 
+    background-color: #080808; 
+    color: #ffffff; 
+    font-size: 38px; 
+    font-weight: bold; 
+    padding: 12px 35px; 
+    border-radius: 14px; 
+    font-family: monospace; 
+    border: 1px solid #1f1f1f;
+}
+
+.kata-central-card-score { 
+    background-color: #080808; 
+    width: 100%; 
+    max-width: 580px; 
+    margin: 0 auto; 
+    border-radius: 20px; 
+    padding: 40px 30px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #151515;
+}
+.kata-player-name-title { 
+    font-size: 34px; 
+    font-weight: 800; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    margin-bottom: 25px; 
+    text-align: center; 
+}
+
+.kata-jueces-row-preview { 
+    display: flex; 
+    gap: 15px; 
+    margin-bottom: 30px; 
+}
+
+.juez-input-small { 
+    background-color: #0b0b0b; 
+    color: #ff9900; 
+    font-size: 20px; 
+    font-weight: bold; 
+    padding: 8px 10px; 
+    border-radius: 6px; 
+    border: 1px solid #222222; 
+    font-family: monospace; 
+    width: 85px;
+    text-align: center;
+    outline: none;
+}
+.juez-input-small:focus {
+    border-color: #ff0000;
+}
+.juez-input-small::-webkit-outer-spin-button,
+.juez-input-small::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.kata-main-input-box { 
+    width: 100%; 
+    max-width: 420px; 
+    height: 140px; 
+    background: linear-gradient(to right, #ff0000, #ff9900); 
+    border-radius: 18px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px; 
+}
+.kata-main-input-box input { 
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    border: none; 
+    text-align: center; 
+    font-size: 85px; 
+    font-weight: 900; 
+    color: #000000; 
+    outline: none; 
+}
+
+.kata-footer-actions-row { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    width: 100%; 
+    max-width: 540px; 
+    margin: 0 auto; 
+}
+.kata-footer-actions-row button { 
+    flex: 1; 
+    height: 52px; 
+    border-radius: 10px; 
+    border: none; 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: white; 
+    cursor: pointer; 
+    text-transform: uppercase; 
+}
+
+.k-btn-green { background-color: #2ca85a; }
+.k-btn-yellow { background-color: #e4be1b; color: black !important; }
+.k-btn-magenta { background-color: #e61c5d; }
+.k-btn-finish-gray { background-color: #333333; color: #ffffff; }
+
+.kata-absolute-back { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: none; border: none; color: #444; font-size: 12px; cursor: pointer; text-transform: uppercase; font-weight: bold; }
+.kata-absolute-back:hover { color: #666; }
+.kata-absolute-rest { position: absolute; bottom: 20px; left: 20px; background-color: #0b0b0b; color: #555; border: 1px solid #1f1f1f; padding: 8px 18px; font-size: 11px; font-weight: bold; border-radius: 5px; cursor: pointer; }
+
+/* Modales de Medallero */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 10000;
+}
+.modal-content {
+    background: #080808;
+    border: 1px solid #1f1f1f;
+    width: 90%; max-width: 500px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.modal-header {
+    background: #0d0d0d;
+    padding: 15px 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #1f1f1f;
+}
+.modal-header h2 { font-size: 18px; color: #fff; }
+.btn-cerrar-modal {
+    background: none; border: none; color: #666; font-size: 24px; cursor: pointer;
+}
+.modal-body { padding: 25px 20px; color: #fff; }
+.modal-cat-titulo { color: #ff9900; margin-bottom: 15px; font-size: 16px; text-transform: uppercase; }
+.modal-footer {
+    background: #0d0d0d; padding: 15px 20px; display: flex; justify-content: flex-end;
+    border-top: 1px solid #1f1f1f;
+}

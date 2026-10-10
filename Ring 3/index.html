@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DOKAN - Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: sans-serif; 
+        }
+
+        /* Navbar Superior */
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 15px 30px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            position: relative; /* Importante para el z-index */
+            z-index: 10;        /* Asegura que el menú esté al frente */
+        }
+        .nav-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-icon {
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-item {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .nav-item.active {
+            color: #9d1c24;
+        }
+        .nav-item:hover {
+            color: white;
+        }
+        .nav-item.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        /* Estructura Principal */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 60px); 
+            width: 100%;
+            background-color: #fafdff; 
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            width: 92%;
+            max-width: 1400px;
+        }
+
+        .text-side {
+            display: flex;
+            flex-direction: column;
+        }
+        .welcome {
+            font-size: 26px;
+            color: #555;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+        .title {
+            font-size: 110px;
+            font-weight: 900;
+            color: #000;
+            line-height: 0.95;
+            margin: 15px 0;
+        }
+        .defender {
+            font-size: 34px;
+            color: #446;
+            letter-spacing: 8px;
+            font-weight: 600;
+        }
+
+        .logo-side {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .logo-side img {
+            width: 700px !important;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item active">INICIO</a>
+                <a href="login.html" class="nav-item">LOGIN</a>
+                <a href="#" class="nav-item disabled">CATEGORIAS</a>
+                <a href="#" class="nav-item disabled">NUEVO USUARIO</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="hero">
+        <div class="hero-content">
+            <div class="text-side">
+                <p class="welcome">BIENVENID@S A</p>
+                <h1 class="title">DOKAN</h1>
+                <p class="defender">SYSTEM</p>
+            </div>
+            <div class="logo-side">
+                <img src="logo.png" alt="Logo">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
